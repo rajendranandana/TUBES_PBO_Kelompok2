@@ -45,7 +45,7 @@ public class PEMINJAMAN extends javax.swing.JInternalFrame {
     
     public Connection setKoneksi(){
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn=DriverManager.getConnection("jdbc:mysql://localhost/db_perpustakaan","root","");
             stm=conn.createStatement();
         } catch (Exception e) {
